@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+* {
+    font-family: 'Mulish',sans-serif;
+    color: #333;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    margin: 0;
+}
+header {
+    left: 0px;
+    top: 0px;
+    height: 81px;
+}
+main {
+    position: absolute;
+    left: 0px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+.h3_h4 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3%;
+    margin: 3% 0 6% 0;
+}
+h3 {
+    margin: 0;
+}
+h3 a {
+    font-weight: 400;
+    margin: 0;
+}
+.section_1 {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+}
+.section_1 img{
+    width: 100%;
+    height: auto;
+}
+.form_right {
+    padding-left: 10%;
+    width: 30rem;
+}
+.div_form label {
+    display: block;
+    padding: 2% 0;
+}
+.div_form input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2% 2%;
+    font-family: 'Mulish',sans-serif;
+}
+.div_form input:focus {
+    outline: 1px solid #5379FF;
+
+}
+.password_icon {
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+.password_icon label {
+    text-align: left;
+    display: table-cell
+}
+.password_icon input {
+    text-align: right;
+    display: table-cell;
+}
+
+.material-symbols-outlined {
+    color: #333;
+    cursor: pointer;
+    font-size: 100%;
+    text-align: right;
+    width: 100%;
+}
+.select_input {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 4%;
+}
+.div_checkbox{
+    margin: 6% 0;
+}
+input.input_checkbox {
+    width: unset;
+}
+.btn_submit {
+    width: 100%;
+    padding: 3% 1%;
+    color: #fff;
+    background-color: #333;
+    border: 0.5px solid transparent;
+}
+.btn_submit:hover {
+    width: 100%;
+    padding: 3% 1%;
+    color: #333;
+    background-color: #fff;
+    border: 0.5px solid #333;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media (max-width:961px) {
+    * {
+        font-size: 95%;
+    }
+    .section_1 img {
+        width: 50%;
+        height: auto;
+    }
+    .form_right {
+        padding-left: 5%;
+        width: 25rem;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width:481px) {
+    * {
+        font-size: 95%;
+    }
+    .section_1 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px;
+        align-items: center;
+    }
+    .section_1 img {
+        width: 100%;
+        height: auto;
+        margin-top:3%;
+    }
+}
+@media only screen and (min-device-width : 961px) and (max-device-width : 1232px) {
+    * {
+        font-size: 95%;
+    }
+    .section_1 img {
+        width: 60%;
+        height: auto;
+    }
+    .form_right {
+        padding-left: 5%;
+        width: 40rem;
+        margin-right: 5%;
+    }
+}
+@media only screen and (min-device-width : 300px) and (max-device-width : 420px) {
+    .form_right {
+        width: 18rem;
+    }
+}

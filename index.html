@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Ioana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script type="text/javascript">//replaces the LSEP//
+        window.onload = function() { document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ''); }
+    </script>
+</head>
+<body>
+    <header>
+    </header><!-- /header -->
+    <main>
+        <section class="section_1">
+            <img src="MediaPlaceholder.png" alt="">
+            <div class="form_right">
+                <h2>Welcome! <br>Create your account.</h2>
+                <div class="h3_h4">                
+                    <h3>Already a member?</h3>
+                    <h3><a href="#">Sign up<a></h3>
+                </div>
+                <div class="div_form clearfix">
+                    <form action="/action_page.php" method="post">
+                        <div>
+                            <label for="name">Phone number</label>
+                            <div class="select_input">
+                            <select>
+                                <option value="+46">+46</option>
+                                <option value="+65">+65</option>
+                                <option value="+290">+290</option>
+                                <option value="+386">+386</option>
+                            </select>
+                            <input type="tel" required="required">
+                            </div>
+
+                            <label>E-mail</label>
+                             <input type="email" required="required">
+                                
+                            <div class="password_icon">
+                                <label for="name">Choose password</label>
+                                <span class="material-symbols-outlined">visibility</span>
+                            </div>
+                            <input id="password" name="password" type="password" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="It’ll be our secret" required>
+
+                            <div class="password_icon">
+                                <label for="name">Repeat password</label>
+                                <span class="material-symbols-outlined">visibility</span>
+                            </div>
+                            <input id="password_two" name="password_two" type="password" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same password as above' : '');" required>
+                        </div>
+                        <div class="div_checkbox">
+                            <input class="input_checkbox" type="checkbox" required="required">I consent to the <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a>.
+                        </div>
+                        <div class="div_checkbox">
+                            <input class="input_checkbox" type="checkbox" required="required">I want to receive stories for trends, inspiration, interior design tips and to be the first to learn about new products & campaigns.
+                        </div>
+                        <button class="btn_submit" type="submit" value="send">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
